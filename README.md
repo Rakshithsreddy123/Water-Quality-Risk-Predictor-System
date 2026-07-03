@@ -90,28 +90,28 @@ The application analyzes the entered water quality parameters, predicts whether 
 
 <p align="center">
   <img width="740" height="363" alt="image" src="https://github.com/user-attachments/assets/e112cf1a-9879-4fb3-bc86-244b0dc60c66" />
-  <p align="center">Home page of Water Quality Risk Predictor</p>
+  <p align="center">Fig: Home page of Water Quality Risk Predictor</p>
 </p>
 
 ---
 
 <p align="center">
   <img width="748" height="343" alt="image" src="https://github.com/user-attachments/assets/34fe4ba9-c2c4-4341-82b7-711e3b756a1e" />
-  <p align="center">Result page indicating Low Risk Level</p>
+  <p align="center">Fig: Result page indicating Low Risk Level</p>
 </p>
 
 ---
 
 <p align="center">
   <img width="748" height="343" alt="image" src="https://github.com/user-attachments/assets/2abdabd8-cce5-422a-8702-c955b1f449c4" />
-  <p align="center">Result Page indicating Moderate Risk Level</p>
+  <p align="center">Fig: Result Page indicating Moderate Risk Level</p>
 </p>
 
 ---
 
 <p align="center">
   <img width="748" height="343" alt="image" src="https://github.com/user-attachments/assets/a5fa398f-c213-40ba-af7d-1770ce38c06d" />
-  <p align="center">Result page indicating High Risk Level</p>
+  <p align="center">Fig: Result page indicating High Risk Level</p>
 </p>
 
 ---
