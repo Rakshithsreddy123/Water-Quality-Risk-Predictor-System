@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Quality Risk Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+</head>
+
+<body>
+
+    <!-- 🔷 HEADER -->
+    <div class="header">
+        <h1>💧 Water Quality Risk Predictor</h1>
+        <h2>AI-based Water Contamination and Risk Prediction System</h2>
+    </div>
+
+    <div class="container">
+        <div class="card">
+
+            <form method="POST" action="/result">
+        
+            <h3>💧 Water Chemistry</h3>
+            <div class="form-grid">
+                <div>
+                    <label>💧 pH</label>
+                    <input type="number" name="pH" list="pH-list" placeholder="6.5–8.5" required>
+                    <datalist id="pH-list">
+                        {% for v in presets["pH"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+
+                <div>
+                    <label>🧪 Hardness</label>
+                    <input type="number" name="Hardness" list="Hardness-list" placeholder="0–300 mg/L" required>
+                    <datalist id="Hardness-list">
+                        {% for v in presets["Hardness"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+
+                <div>
+                    <label>🧪 Solids (TDS)</label>
+                    <input type="number" name="Solids" list="Solids-list" placeholder="0–500 mg/L" required>
+                    <datalist id="Solids-list">
+                        {% for v in presets["Solids"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+            </div>
+
+            <!-- 🧪 CHEMICAL COMPOSITION -->
+            <h3>🧪 Chemical Composition</h3>
+            <div class="form-grid">
+                <div>
+                    <label>🧪 Chloramines</label>
+                    <input type="number" name="Chloramines" list="Chloramines-list" placeholder="0–4 mg/L" required>
+                    <datalist id="Chloramines-list">
+                        {% for v in presets["Chloramines"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+
+                <div>
+                    <label>🧪 Sulfate</label>
+                    <input type="number" name="Sulfate" list="Sulfate-list" placeholder="0–250 mg/L" required>
+                    <datalist id="Sulfate-list">
+                        {% for v in presets["Sulfate"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+
+                <div>
+                    <label>🧪 Organic Carbon</label>
+                    <input type="number" name="Organic_carbon" list="Organic_carbon-list" placeholder="0–2 mg/L" required>
+                    <datalist id="Organic_carbon-list">
+                        {% for v in presets["Organic_carbon"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+
+                <div>
+                    <label>🧪 Trihalomethanes</label>
+                    <input type="number" name="Trihalomethanes" list="Trihalomethanes-list" placeholder="0–80 µg/L" required>
+                    <datalist id="Trihalomethanes-list">
+                        {% for v in presets["Trihalomethanes"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+            </div>
+
+            <!-- ⚡ PHYSICAL PROPERTIES -->
+            <h3>⚡ Physical Properties</h3>
+            <div class="form-grid">
+                <div>
+                    <label>⚡ Conductivity</label>
+                    <input type="number" name="Conductivity" list="Conductivity-list" placeholder="50–400 µS/cm" required>
+                    <datalist id="Conductivity-list">
+                        {% for v in presets["Conductivity"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+
+                <div>
+                    <label>🌫 Turbidity</label>
+                    <input type="number" name="Turbidity" list="Turbidity-list" placeholder="0–5 NTU" required>
+                    <datalist id="Turbidity-list">
+                        {% for v in presets["Turbidity"] %}
+                            <option value="{{ v }}">
+                        {% endfor %}
+                    </datalist>
+                </div>
+            </div>
+
+            <button type="submit">Predict</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    function setValue(feature, value) {
+        document.getElementById(feature).value = value;
+    }
+</script>

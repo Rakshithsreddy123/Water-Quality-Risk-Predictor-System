@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Quality Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/result.css') }}">
+</head>
+
+<body class="bg-light">
+
+<div class="container">
+    <div class="card">
+
+        <h2>Water Quality Result</h2>
+
+        <div class="status-container">
+
+            <div class="badge">
+               {{ result.status }}
+            </div>
+
+            <div class="risk-text">
+                Risk Level: {{ result.risk }}
+            </div>
+
+        </div>
+
+        <h4>Reasons</h4>
+        <ul>
+            {% for r in result.reasons %}
+                <li>{{ r }}</li>
+            {% endfor %}
+        </ul>
+
+        <h4>Suggestions</h4>
+        <ul>
+            {% for s in result.suggestions %}
+                <li>{{ s }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/" class="btn">Back</a>
+
+    </div>
+</div>
+
+</body>
+</html>

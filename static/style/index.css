@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    margin: 0;
+}
+
+/* 🔷 HEADER */
+.header {
+    background: #1976d2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* 🔷 CONTAINER */
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* 🔷 CARD */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* 🔷 GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* 🔷 INPUT */
+input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 🔷 LABEL */
+label {
+    font-weight: bold;
+}
+
+/* 🔷 SECTION HEADINGS */
+h3 {
+    margin-top: 20px;
+    color: #1976d2;
+}
+
+/* 🔷 BUTTON */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 25px;
+    border: none;
+    background: #1976d2;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #125aa0;
+}
