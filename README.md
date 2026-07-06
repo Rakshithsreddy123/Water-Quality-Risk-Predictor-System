@@ -89,7 +89,7 @@ The application analyzes the entered water quality parameters, predicts whether 
 ## 📸 Snapshots
 
 <p align="center">
-  <img width="700" height="350" alt="image" src="https://github.com/user-attachments/assets/e112cf1a-9879-4fb3-bc86-244b0dc60c66" />
+  <img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/e112cf1a-9879-4fb3-bc86-244b0dc60c66" />
   <p align="center">Fig: Home page of Water Quality Risk Predictor</p>
 </p>
 
